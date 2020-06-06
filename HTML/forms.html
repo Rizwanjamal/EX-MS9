@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Forms :</h1>
+  <hr />
+  <p>
+    <label>
+      Username : <input name="username" type="text" maxlength="10"/>
+    </label>
+    <label>
+      Password : <input name="password" type="password" />
+    </label>
+    <!-- <br /> -->
+
+    Comments: <br />
+    <textarea cols="30" rows="15">Your Comments ...</textarea>
+    <br />
+    Gender:
+    <input type="radio" name="Gender" value="M" checked/> Male
+    <input type="radio" name="Gender" value="F" /> Female
+    <input type="radio" name="Gender" value="MF" /> Haye Haye ! :D
+    <br />
+    Favourite Gender: 
+    <input type="checkbox" id="M" name="Gender" value="M" /> <label for="M">>Male</label>
+    <input type="checkbox" name="Gender" value="F" checked/> Female
+    <input type="checkbox" name="Gender" value="MF" /> Haye Haye ! :D
+    <br />
+    Favourite Politician:
+    <select name="politician">
+      <option value="Zardari" > Ek Zardari Sab Pe Bhaari </option>
+      <option value="Bilawal" selected > Ziada Barish, Ziada Pani </option>
+      <option value="Nawaz Sharif" > Mujhe Kyun Nikala ? </option>
+    </select>
+    <br />
+    Submit File: <input name="file" type="file"/>
+  </p>
+  <hr />
+  <p>
+    <form action="http://www.example.com/subscribe.php">
+      <p>Subscribe to our email list:</p>
+      <input type="text" placeholder="email" name="email" />
+      <input type="hidden" name="id" value="EX-MS9">
+      <input type="submit" name="subscribe"
+       value="Subscribe" />
+      </form>
+  </p>
+  <p>
+    <button>Click Me !</button>
+    <button><img src="./webPage-links/images/download.jpg" width="15px" height="15px"/> Mujhe Dabao !</button>
+  </p>
+  <p>
+    <fieldset>
+      <legend>Contact details</legend>
+      <label>Email:<br />
+      <input type="text" name="email" /></label><br />
+      <label>Mobile:<br />
+      <input type="text" name="mobile" /></label><br />
+      <label>Telephone:<br />
+      <input type="text" name="telephone" /></label>
+    </fieldset>
+  </p>
+</body>
+</html>

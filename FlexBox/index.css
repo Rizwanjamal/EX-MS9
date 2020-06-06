@@ -1,0 +1,22 @@
+.flex-container {
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: orange;
+  align-items: center;
+  height: 100vh;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse; */
+}
+
+.flex-items {
+  list-style: none;
+  width: 200px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  background-color: greenyellow;
+  margin: 5px;
+}
