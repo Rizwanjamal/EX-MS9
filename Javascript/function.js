@@ -73,3 +73,18 @@ function changeCase (text, textCase) {
   else
       return "Enter Correct Case";
 }
+
+///////////////////////////////////////////////////
+// No. of occurances of The or the
+var a = "The quick brown fox jumps over the lazy dog";
+a = a.replace('The', 'the');
+var count = a.split('the').length - 1;
+
+// method 2
+b = a.split(' ');
+var count = 0;
+b.forEach(function (word) {
+    if (word.toLowerCase() == 'the') {
+        count++;
+    }
+})
