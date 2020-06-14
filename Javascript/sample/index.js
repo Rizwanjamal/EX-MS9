@@ -55,3 +55,22 @@ function getMonthName() {
     alert("Invalid Number") : 
     alert(months[userInput - 1]);
 }
+
+var interval;
+function startTimer() {
+  interval = setInterval(timer, 1000)
+}
+
+function timer() {
+  var date = new Date();
+  var time = date.toLocaleTimeString();
+  document.getElementById('clock').innerHTML= time;
+}
+
+function stopTimer() {
+  clearInterval(interval);
+}
+
+function getRandomInt(min, max) {
+  console.log(Math.floor(Math.random() * (max - min + 1) + min));
+}
